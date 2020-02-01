@@ -34,9 +34,8 @@ def answer_02():
         nearest_neighbors class
     """
     # Wrong classifier
-    from sklearn.naive_bayes import GaussianNB
-
-    return GaussianNB
+    from sklearn.metrics import balanced_accuracy_score as sklearn_metric # Replace that by balanced accuracy 
+    return sklearn_model = KNeighborsClassifier(n_neighbors=1)
 
 
 def answer_03():
